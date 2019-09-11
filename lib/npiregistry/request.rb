@@ -24,6 +24,7 @@ module Npiregistry
     def process_parameters
       options = OpenStruct.new(@options)
       {
+          version: "2.1",
           number: options.number,
           enumeration_type: options.enumeration_type,
           taxonomy_description: options.taxonomy_description,
